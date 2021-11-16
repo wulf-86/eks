@@ -1,5 +1,5 @@
 module "eks" {
-  source                          = "../../../modules/terraform-aws-eks"
+  source                          = "../terraform-aws-eks"
   cluster_name                    = local.cluster_name
   cluster_version                 = var.cluster_version
   subnets                         = lookup(var.vpc_options, "subnet_ids")
