@@ -1,0 +1,6 @@
+version: 0.1
+resource_usage:
+  module.eks.aws_autoscaling_group.workers_launch_template[0]:
+    instances: 3
+  module.eks.aws_eks_cluster.this[0]:
+    instances: 3
